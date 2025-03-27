@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #640000, #8B0000, #A52A2A); /* Maroon gradient */
+    color: white;
+    padding: 20px;
+}
+
+/* Main Container */
+.main {
+    margin-top: 20px;
+    border: 2px solid rgb(210, 210, 210);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80rem;
+    background-color: white; /* Ensures contrast */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    color: black;
+}
+
+/* Alert heading */
+.alert-dark {
+    background-color: maroon;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Buttons */
+.btn-secondary, .btn-dark {
+    background-color: maroon !important;
+    color: white !important;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover, .btn-dark:hover {
+    background-color: darkred !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+/* Add File Button */
+.btn-add-file {
+    background-color: #A52A2A !important;
+    color: white !important;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-add-file:hover {
+    background-color: darkred !important;
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+.table {
+    max-height: 600px;
+    overflow-y: auto;  
+    border-radius: 8px;
+    border: 2px solid maroon;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Table Header */
+thead {
+    background-color: maroon;
+    color: white;
+}
+
+tbody tr {
+    background-color: white !important;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: rgb(245, 245, 245) !important;
+}
+
+/* Table Cell Padding */
+th, td {
+    padding: 12px 15px;
+}
+    
+/* Action Dropdown Button */
+.btn-group .btn-dark {
+    background-color: maroon;
+    border: none;
+}
+
+.btn-group .btn-dark:hover {
+    background-color: darkred;
+}
+
+/* File Input Styling */
+input[type="file"] {
+    border: 1px solid maroon;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Modal Styling */
+.modal-content {
+    border: 2px solid maroon;
+    background: white;
+    color: black;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.modal-header .close {
+    color: maroon;
+    font-size: 1.5rem;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    background-color: white;
+    border: 1px solid maroon;
+}
+
+.dropdown-menu .btn {
+    margin: 2px;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-menu .btn-success {
+    background-color: green;
+}
+
+.dropdown-menu .btn-danger {
+    background-color: red;
+}
+
+.dropdown-menu .btn-secondary {
+    background-color: maroon;
+}
